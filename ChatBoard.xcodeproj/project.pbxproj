@@ -12,8 +12,10 @@
 		FB7FC2C129F7874D00A4620D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7FC2BF29F7874D00A4620D /* Main.storyboard */; };
 		FB7FC2C329F7874E00A4620D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7FC2C229F7874E00A4620D /* Assets.xcassets */; };
 		FB7FC2C629F7874E00A4620D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7FC2C429F7874E00A4620D /* LaunchScreen.storyboard */; };
-		FB7FC2D129F7874E00A4620D /* ChatBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FC2D029F7874E00A4620D /* ChatBoardTests.swift */; };
-		FB7FC2DC29F7874E00A4620D /* ChatBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FC2DB29F7874E00A4620D /* ChatBoardUITests.swift */; };
+		FB7FC2F029F787C100A4620D /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FC2EF29F787C100A4620D /* KeyboardViewController.swift */; };
+		FB7FC2F429F787C100A4620D /* ChatKeyBoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FB7FC2ED29F787C100A4620D /* ChatKeyBoard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FB7FC2FA29F7A1E300A4620D /* KeyBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB7FC2F929F7A1E300A4620D /* KeyBoardView.xib */; };
+		FB7FC2FC29F7A1F900A4620D /* KeyBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FC2FB29F7A1F900A4620D /* KeyBoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,28 @@
 			remoteGlobalIDString = FB7FC2B729F7874D00A4620D;
 			remoteInfo = ChatBoard;
 		};
+		FB7FC2F229F787C100A4620D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB7FC2B029F7874D00A4620D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB7FC2EC29F787C100A4620D;
+			remoteInfo = ChatKeyBoard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB7FC2F829F787C100A4620D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FB7FC2F429F787C100A4620D /* ChatKeyBoard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FB7FC2B829F7874D00A4620D /* ChatBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,11 +65,14 @@
 		FB7FC2C529F7874E00A4620D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB7FC2C729F7874E00A4620D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB7FC2CC29F7874E00A4620D /* ChatBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB7FC2D029F7874E00A4620D /* ChatBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBoardTests.swift; sourceTree = "<group>"; };
-		FB7FC2D229F7874E00A4620D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB7FC2D729F7874E00A4620D /* ChatBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB7FC2DB29F7874E00A4620D /* ChatBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBoardUITests.swift; sourceTree = "<group>"; };
-		FB7FC2DD29F7874E00A4620D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7FC2ED29F787C100A4620D /* ChatKeyBoard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChatKeyBoard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7FC2EF29F787C100A4620D /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		FB7FC2F129F787C100A4620D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7FC2F929F7A1E300A4620D /* KeyBoardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyBoardView.xib; sourceTree = "<group>"; };
+		FB7FC2FB29F7A1F900A4620D /* KeyBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardView.swift; sourceTree = "<group>"; };
+		FBAA30712A069C11002EED6E /* ChatBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatBoard.entitlements; sourceTree = "<group>"; };
+		FBAA30722A069C40002EED6E /* ChatKeyBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatKeyBoard.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB7FC2EA29F787C100A4620D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,9 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				FB7FC2BA29F7874D00A4620D /* ChatBoard */,
-				FB7FC2CF29F7874E00A4620D /* ChatBoardTests */,
-				FB7FC2DA29F7874E00A4620D /* ChatBoardUITests */,
+				FB7FC2EE29F787C100A4620D /* ChatKeyBoard */,
 				FB7FC2B929F7874D00A4620D /* Products */,
+				FBAA306E2A064DA4002EED6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +123,7 @@
 				FB7FC2B829F7874D00A4620D /* ChatBoard.app */,
 				FB7FC2CC29F7874E00A4620D /* ChatBoardTests.xctest */,
 				FB7FC2D729F7874E00A4620D /* ChatBoardUITests.xctest */,
+				FB7FC2ED29F787C100A4620D /* ChatKeyBoard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +131,7 @@
 		FB7FC2BA29F7874D00A4620D /* ChatBoard */ = {
 			isa = PBXGroup;
 			children = (
+				FBAA30712A069C11002EED6E /* ChatBoard.entitlements */,
 				FB7FC2BB29F7874D00A4620D /* AppDelegate.swift */,
 				FB7FC2BD29F7874D00A4620D /* ViewController.swift */,
 				FB7FC2BF29F7874D00A4620D /* Main.storyboard */,
@@ -107,22 +142,23 @@
 			path = ChatBoard;
 			sourceTree = "<group>";
 		};
-		FB7FC2CF29F7874E00A4620D /* ChatBoardTests */ = {
+		FB7FC2EE29F787C100A4620D /* ChatKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
-				FB7FC2D029F7874E00A4620D /* ChatBoardTests.swift */,
-				FB7FC2D229F7874E00A4620D /* Info.plist */,
+				FBAA30722A069C40002EED6E /* ChatKeyBoard.entitlements */,
+				FB7FC2EF29F787C100A4620D /* KeyboardViewController.swift */,
+				FB7FC2F129F787C100A4620D /* Info.plist */,
+				FB7FC2F929F7A1E300A4620D /* KeyBoardView.xib */,
+				FB7FC2FB29F7A1F900A4620D /* KeyBoardView.swift */,
 			);
-			path = ChatBoardTests;
+			path = ChatKeyBoard;
 			sourceTree = "<group>";
 		};
-		FB7FC2DA29F7874E00A4620D /* ChatBoardUITests */ = {
+		FBAA306E2A064DA4002EED6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FB7FC2DB29F7874E00A4620D /* ChatBoardUITests.swift */,
-				FB7FC2DD29F7874E00A4620D /* Info.plist */,
 			);
-			path = ChatBoardUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,12 +171,16 @@
 				FB7FC2B429F7874D00A4620D /* Sources */,
 				FB7FC2B529F7874D00A4620D /* Frameworks */,
 				FB7FC2B629F7874D00A4620D /* Resources */,
+				FB7FC2F829F787C100A4620D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FB7FC2F329F787C100A4620D /* PBXTargetDependency */,
 			);
 			name = ChatBoard;
+			packageProductDependencies = (
+			);
 			productName = ChatBoard;
 			productReference = FB7FC2B829F7874D00A4620D /* ChatBoard.app */;
 			productType = "com.apple.product-type.application";
@@ -181,6 +221,25 @@
 			productReference = FB7FC2D729F7874E00A4620D /* ChatBoardUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FB7FC2EC29F787C100A4620D /* ChatKeyBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB7FC2F529F787C100A4620D /* Build configuration list for PBXNativeTarget "ChatKeyBoard" */;
+			buildPhases = (
+				FB7FC2E929F787C100A4620D /* Sources */,
+				FB7FC2EA29F787C100A4620D /* Frameworks */,
+				FB7FC2EB29F787C100A4620D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatKeyBoard;
+			packageProductDependencies = (
+			);
+			productName = ChatKeyBoard;
+			productReference = FB7FC2ED29F787C100A4620D /* ChatKeyBoard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +261,9 @@
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = FB7FC2B729F7874D00A4620D;
 					};
+					FB7FC2EC29F787C100A4620D = {
+						CreatedOnToolsVersion = 10.3;
+					};
 				};
 			};
 			buildConfigurationList = FB7FC2B329F7874D00A4620D /* Build configuration list for PBXProject "ChatBoard" */;
@@ -213,6 +275,8 @@
 				Base,
 			);
 			mainGroup = FB7FC2AF29F7874D00A4620D;
+			packageReferences = (
+			);
 			productRefGroup = FB7FC2B929F7874D00A4620D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -220,6 +284,7 @@
 				FB7FC2B729F7874D00A4620D /* ChatBoard */,
 				FB7FC2CB29F7874E00A4620D /* ChatBoardTests */,
 				FB7FC2D629F7874E00A4620D /* ChatBoardUITests */,
+				FB7FC2EC29F787C100A4620D /* ChatKeyBoard */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +314,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB7FC2EB29F787C100A4620D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7FC2FA29F7A1E300A4620D /* KeyBoardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -265,7 +338,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB7FC2D129F7874E00A4620D /* ChatBoardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +345,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB7FC2DC29F7874E00A4620D /* ChatBoardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7FC2E929F787C100A4620D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7FC2F029F787C100A4620D /* KeyboardViewController.swift in Sources */,
+				FB7FC2FC29F7A1F900A4620D /* KeyBoardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +369,11 @@
 			isa = PBXTargetDependency;
 			target = FB7FC2B729F7874D00A4620D /* ChatBoard */;
 			targetProxy = FB7FC2D829F7874E00A4620D /* PBXContainerItemProxy */;
+		};
+		FB7FC2F329F787C100A4620D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB7FC2EC29F787C100A4620D /* ChatKeyBoard */;
+			targetProxy = FB7FC2F229F787C100A4620D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -431,10 +516,13 @@
 		FB7FC2E129F7874E00A4620D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChatBoard/ChatBoard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3KHP7B6527;
 				INFOPLIST_FILE = ChatBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,10 +537,13 @@
 		FB7FC2E229F7874E00A4620D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChatBoard/ChatBoard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3KHP7B6527;
 				INFOPLIST_FILE = ChatBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,6 +637,48 @@
 			};
 			name = Release;
 		};
+		FB7FC2F629F787C100A4620D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ChatKeyBoard/ChatKeyBoard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KHP7B6527;
+				INFOPLIST_FILE = ChatKeyBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ChatBoard.ChatKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB7FC2F729F787C100A4620D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ChatKeyBoard/ChatKeyBoard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KHP7B6527;
+				INFOPLIST_FILE = ChatKeyBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ChatBoard.ChatKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,6 +714,15 @@
 			buildConfigurations = (
 				FB7FC2E729F7874E00A4620D /* Debug */,
 				FB7FC2E829F7874E00A4620D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB7FC2F529F787C100A4620D /* Build configuration list for PBXNativeTarget "ChatKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7FC2F629F787C100A4620D /* Debug */,
+				FB7FC2F729F787C100A4620D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,7 +7,25 @@
 		<key>ChatBoard.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>ChatKeyBoard.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FB7FC2B729F7874D00A4620D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB7FC2EC29F787C100A4620D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
